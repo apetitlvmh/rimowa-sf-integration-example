@@ -30,13 +30,12 @@ class SF {
       oauth2 : {
         loginUrl: this.sf_url,
         clientId: this.client_id,
-        clientSecret: this.client_secret
-        // redirectUri: this.sf_callback_url
+        clientSecret: this.client_secret,
+        redirectUri: this.sf_callback_url
       }
     });
     conn.login(this.user_name, this.password, function(err: any, userInfo: any) {
       if (err) { 
-        console.log('######### something is wrong');
         return console.error(err); 
       }
       console.log(userInfo);
