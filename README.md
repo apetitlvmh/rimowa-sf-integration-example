@@ -1,4 +1,4 @@
-# LVMH DevOps
+# LVMH node js Sales Force connector example
 
 ## How to run me
 
